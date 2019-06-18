@@ -15,7 +15,7 @@ echo "Disableing Bluetooth"
 sudo systemctl stop bluetooth
 sudo systemctl disable bluetooth
 
-echo " enableing the new flicd.service" 
+echo " enabling the new flicd.service" 
 sudo systemctl enable flicd.service
 sudo systemctl start flicd.service
 
