@@ -1,0 +1,13 @@
+[Unit]
+Description=Flic Buttons Service
+After=bluetooth.service
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/usr/local/bin/flicd -w -s 0.0.0.0 -p 5551 -l /home/pi/flic/flic_log.txt -$
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
